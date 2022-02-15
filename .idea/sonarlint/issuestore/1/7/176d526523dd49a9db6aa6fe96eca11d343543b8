@@ -1,0 +1,5 @@
+
+T
+java:S2589"7Remove this expression which always evaluates to "true"(¿‡§­8§Ñã×/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Æõûÿÿÿÿ8Æ±Œâ×/
+]	java:S125	"<This block of commented-out lines of code should be removed.(÷³‹ùÿÿÿÿ8­Ğ‹â×/

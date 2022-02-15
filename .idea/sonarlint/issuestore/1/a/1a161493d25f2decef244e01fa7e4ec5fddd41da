@@ -1,0 +1,10 @@
+
+F
+java:S1128"1Remove this unused import 'java.util.LinkedList'.(»Äğ1
+F
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
+[
+java:S2259@"@A "NullPointerException" could be thrown; "n2" is nullable here.(Óî“íùÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(€ºŸç
+S	java:S106"9Replace this use of System.out or System.err by a logger.(±ÿ¬ıÿÿÿÿ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(¤ªÑÉÿÿÿÿÿ

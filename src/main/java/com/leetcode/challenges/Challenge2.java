@@ -1,56 +1,11 @@
 package com.leetcode.challenges;
 
 import java.math.BigInteger;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 
 /**
  * @author sanray on 10/20/2021
  */
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-
-    public static ListNode deserialize(String val) {
-
-        List<Integer> nums =
-                Stream.of(val.split(""))
-                        .filter(s -> isNumeric(s))
-                        .map(Integer::parseInt).collect(Collectors.toList());
-        ListNode head = new ListNode();
-        ListNode temp = head;
-        for (Integer in : nums) {
-            temp.next = new ListNode(in, null);
-            temp = temp.next;
-        }
-
-        return head.next;
-    }
-
-    static boolean isNumeric(String s) {
-        try {
-            Integer v = Integer.parseInt(s);
-            return true;
-        } catch (Exception ex) {
-            return false;
-        }
-    }
-}
 
 public class Challenge2 {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
@@ -97,7 +52,6 @@ public class Challenge2 {
 
     public static void main(String[] args) {
 
-
         ListNode l1 = ListNode.deserialize("[2,4,3]");
         ListNode l2 = ListNode.deserialize("[5,6,4]");
 
@@ -115,7 +69,6 @@ public class Challenge2 {
             System.out.println(result.val + " ");
             result = result.next;
         }
-
 
     }
 }

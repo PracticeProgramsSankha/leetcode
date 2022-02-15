@@ -1,6 +1,7 @@
 package com.leetcode.challenges;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Stack;
 import java.util.stream.Collectors;
 import org.apache.commons.lang3.StringUtils;
@@ -14,7 +15,6 @@ public class GenerateParenthesis {
     public static void printParenthesis(int n) {
         Stack<String> stack = new Stack<>();
         HashSet<String> res = new HashSet<>();
-
         generateParenthesis(0, 0, n, stack, res);
         System.out.println(String.format("Parenthesis with %d: [%s]", n, StringUtils.join(res, ",")));
     }

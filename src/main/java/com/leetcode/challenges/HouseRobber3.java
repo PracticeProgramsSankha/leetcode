@@ -37,7 +37,7 @@ public class HouseRobber3 {
         int[] left = getMaxValueWithRoot(root.getLeft());
         int[] right = getMaxValueWithRoot(root.getRight());
 
-        int withRoot = root.getData() + left[1] + right[1];
+        int withRoot = root.getVal() + left[1] + right[1];
         int withoutRoot = Math.max(left[0], left[1]) + Math.max(right[0], right[1]);
 
         return new int[] {withRoot, withoutRoot};

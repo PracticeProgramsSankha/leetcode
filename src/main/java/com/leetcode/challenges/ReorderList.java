@@ -1,9 +1,5 @@
 package com.leetcode.challenges;
 
-import java.util.LinkedList;
-import java.util.List;
-
-
 /**
  * @author sanray on 11/1/2021
  */

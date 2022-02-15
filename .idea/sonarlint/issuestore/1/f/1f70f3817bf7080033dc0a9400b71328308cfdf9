@@ -1,0 +1,13 @@
+
+X	java:S125"<This block of commented-out lines of code should be removed.(Ù–¿«8ÍÁ¾æÑ/
+Z	java:S106*"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8«Ì¥æÑ/
+`
+java:S1854">Remove this useless assignment to local variable "rotatedBox".(Ü¾ ÷øÿÿÿÿ8ÍÁ¾æÑ/
+Q
+java:S1481"/Remove this unused "rotatedBox" local variable.(Ü¾ ÷øÿÿÿÿ8ÍÁ¾æÑ/
+X	java:S125K"<This block of commented-out lines of code should be removed.(½˜¥…8ÿ¼õûÑ/
+Z	java:S106%"9Replace this use of System.out or System.err by a logger.(§ÿâµøÿÿÿÿ8¼™¢æÑ/
+U	java:S106("9Replace this use of System.out or System.err by a logger.(ÜıŞÍ8á†¤æÑ/
+X	java:S125N"<This block of commented-out lines of code should be removed.(Ê™¯8Â÷ûÑ/
+X	java:S125;"<This block of commented-out lines of code should be removed.(Áå˜8™ç™æÑ/
+X	java:S1259"<This block of commented-out lines of code should be removed.(Ÿ³Õ³8—¶÷ûÑ/

@@ -4,12 +4,12 @@ package com.datastructure.nodedemo;
  * @author sanray on 10/26/2021
  */
 public class TreeNode {
-    private Integer data;
-    private TreeNode left;
-    private TreeNode right;
+    public Integer val;
+    public TreeNode left;
+    public TreeNode right;
 
-    public TreeNode(final Integer data) {
-        this.data = data;
+    public TreeNode(final Integer val) {
+        this.val = val;
     }
 
     public TreeNode getLeft() {
@@ -20,8 +20,8 @@ public class TreeNode {
         return right;
     }
 
-    public Integer getData() {
-        return data;
+    public Integer getVal() {
+        return val;
     }
 
     public void setLeft(final TreeNode left) {
@@ -33,7 +33,7 @@ public class TreeNode {
     }
 
     public TreeNode findNode(Integer data) {
-        if (data < this.data && left != null) {
+        if (data < this.val && left != null) {
             return left.findNode(data);
         } else if (right != null) {
             return right.findNode(data);
@@ -42,7 +42,7 @@ public class TreeNode {
     }
 
     public void insert(Integer data) {
-        if (data >= this.data) {
+        if (data >= this.val) {
             if (right == null) {
                 right = new TreeNode(data);
             } else {
@@ -59,7 +59,7 @@ public class TreeNode {
     }
 
     public void traversePreOrder() {
-        System.out.print(this.getData() + "==>");
+        System.out.print(this.getVal() + "==>");
         if (left != null) {
             left.traversePreOrder();
         }
@@ -72,7 +72,7 @@ public class TreeNode {
         if (left != null) {
             left.traverseInOrder();
         }
-        System.out.print(this.getData() + "==>");
+        System.out.print(this.getVal() + "==>");
         if (right != null) {
             right.traverseInOrder();
         }
@@ -85,7 +85,7 @@ public class TreeNode {
         if (right != null) {
             right.traversePostOrder();
         }
-        System.out.print(this.getData() + "==>");
+        System.out.print(this.getVal() + "==>");
     }
 
     public boolean isLeaf() {

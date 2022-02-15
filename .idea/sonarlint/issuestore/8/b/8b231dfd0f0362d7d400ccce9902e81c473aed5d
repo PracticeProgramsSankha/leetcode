@@ -1,0 +1,13 @@
+
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(©×òøÿÿÿÿ8¢î˜‡Ğ/
+V
+java:S2864"4Iterate over the "entrySet" instead of the "keySet".(İÿªúÿÿÿÿ8­•’‡Ğ/
+H
+java:S2185%"&Remove this silly call to "Math.floor"(¿Îò•üÿÿÿÿ8­•’‡Ğ/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ûå¾âúÿÿÿÿ8¼šÁ†Ğ/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ûå¾âúÿÿÿÿ8ˆš†Ğ/
+d
+java:S2184%"BCast one of the operands of this division operation to a "double".(¿Îò•üÿÿÿÿ8­•’‡Ğ/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(»†„…8™»¥†Ğ/
+O
+java:S1128"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿ8Ñşı‡Ğ/

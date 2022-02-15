@@ -1,0 +1,8 @@
+
+H
+java:S1481"+Remove this unused "colMin" local variable.(ÿ’Û†8Þá©Ô×/
+M
+java:S1481"+Remove this unused "rowMin" local variable.(¿›¹Äüÿÿÿÿ8Þá©Ô×/
+7
+java:S1116"Remove this empty statement.(°¹Ÿ‰ýÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(°¹Ÿ‰ýÿÿÿÿ

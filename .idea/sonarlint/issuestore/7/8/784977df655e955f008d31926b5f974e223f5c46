@@ -1,0 +1,25 @@
+
+H
+java:S1199."-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ
+S	java:S106H"9Replace this use of System.out or System.err by a logger.(ƒÇãˆúÿÿÿÿ
+H
+java:S11994"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ
+N
+java:S1197<"8Move the array designator from the variable to the type.(®„ÚÚ
+S	java:S106F"9Replace this use of System.out or System.err by a logger.(ìáÇ¢øÿÿÿÿ
+<
+java:S1168"&Return an empty array instead of null.(¥¹ï
+<
+java:S1168)"&Return an empty array instead of null.(¥¹ï
+S
+java:S11975"8Move the array designator from the variable to the type.(¨“¦üÿÿÿÿ
+N
+java:S1197/"8Move the array designator from the variable to the type.(“Ç«ê
+A
+java:S1481",Remove this unused "indices" local variable.(³Æ©o
+H
+java:S1199;"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ
+P
+java:S1854";Remove this useless assignment to local variable "indices".(³Æ©o
+7
+java:S1116G"Remove this empty statement.(ôŸìúÿÿÿÿ

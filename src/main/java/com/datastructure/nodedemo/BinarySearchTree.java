@@ -37,9 +37,9 @@ public class BinarySearchTree {
         TreeNode parent = root;
         boolean isLeftNode = true;
         // find the node to be deleted
-        while (current != null && data != current.getData()) {
+        while (current != null && data != current.getVal()) {
             parent = current;
-            if (data < current.getData()) {
+            if (data < current.getVal()) {
                 current = current.getLeft();
                 isLeftNode = true;
             } else {

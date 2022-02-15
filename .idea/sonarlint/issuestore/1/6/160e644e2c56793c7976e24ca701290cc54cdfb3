@@ -1,0 +1,10 @@
+
+J
+java:S1128"4Remove this unused import 'java.util.stream.Stream'.(σχ”
+G
+java:S1128"1Remove this unused import 'java.util.Comparator'.(ξΉσΉ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(—Τεωÿÿÿÿ
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(ά¬Ι
+S	java:S106-"9Replace this use of System.out or System.err by a logger.(±ÿ¬ύÿÿÿÿ
+N	java:S106/"9Replace this use of System.out or System.err by a logger.(€Ίη
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(¤ªΡΙÿÿÿÿÿ

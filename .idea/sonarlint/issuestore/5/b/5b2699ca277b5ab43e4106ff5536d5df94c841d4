@@ -1,0 +1,21 @@
+
+Q
+java:S3740="/Provide the parametrized type for this generic.(¯çõØøÿÿÿÿ8Š ÊˆĞ/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ªÎíÃ8Š—ºˆĞ/
+U	java:S106!"9Replace this use of System.out or System.err by a logger.(ªÎíÃ8Š—ºˆĞ/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ªÎíÃ8•¸ŒˆĞ/
+U
+java:S1854S"8Remove this useless assignment to local variable "item".(ÛÃ¬§8ÈáŒØĞ/
+W	java:S125X"<This block of commented-out lines of code should be removed.(’ïÑ#8ãôŠØĞ/
+]	java:S125"<This block of commented-out lines of code should be removed.(İ±­¥şÿÿÿÿ8úµˆĞ/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ªÎíÃ8Š—ºˆĞ/
+Q
+java:S37400"/Provide the parametrized type for this generic.(Ì´æÉùÿÿÿÿ8ÊÖĞˆĞ/
+U	java:S106 "9Replace this use of System.out or System.err by a logger.(ªÎíÃ8Š—ºˆĞ/
+U	java:S106#"9Replace this use of System.out or System.err by a logger.(ªÎíÃ8Š—ºˆĞ/
+O
+java:S1199"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ8áŸ–ˆĞ/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ªÎíÃ8Š—ºˆĞ/
+{
+java:S2293B"YReplace the type specification in this constructor call with the diamond operator ("<>").(ş»ˆ»ÿÿÿÿÿ8É‚ŠØĞ/
+U	java:S106""9Replace this use of System.out or System.err by a logger.(ªÎíÃ8Š—ºˆĞ/

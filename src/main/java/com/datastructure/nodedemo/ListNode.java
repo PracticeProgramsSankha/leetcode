@@ -20,5 +20,16 @@ public class ListNode {
         this.next = next;
     }
 
+    public static ListNode createListNode(int[] nums) {
+        ListNode head = new ListNode();
+        ListNode temp = head;
+        for (Integer in : nums) {
+            temp.next = new ListNode(in, null);
+            temp = temp.next;
+        }
+
+        return head.next;
+    }
+
 }
 
