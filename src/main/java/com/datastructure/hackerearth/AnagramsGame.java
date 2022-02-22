@@ -37,9 +37,6 @@ public class AnagramsGame {
             }
         }
 
-        StringBuffer sb = new StringBuffer();
-        sb.length()
-
         return result;
     }
 }
