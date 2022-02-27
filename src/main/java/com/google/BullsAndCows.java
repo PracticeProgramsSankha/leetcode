@@ -30,6 +30,9 @@ public class BullsAndCows {
         System.out.println("expected [0,4] : " + bc.guess("1351", "3115"));
         System.out.println("expected [2,0] : " + bc.guess("1351", "1111"));
         System.out.println("expected [4,0] : " + bc.guess("1351", "1351"));
+        System.out.println("expected [1,0] : " + bc.guess("11", "01"));
+        System.out.println("expected [1,3] : " + bc.guess("1807", "7810"));
+        System.out.println("expected [1,1] : " + bc.guess("1123", "0111"));
 
     }
 
@@ -38,16 +41,20 @@ public class BullsAndCows {
         Map<Character, List<Integer>> m2 = getIndicesMap(player2);
 
         List<Character> bulls = new ArrayList<>();
-        Set<Integer> cows = new HashSet<>();
+        List<Character> cows = new ArrayList<>();
         // Count bulls
         for (Character ch : m1.keySet()) {
             if (m2.containsKey(ch)) {
                 for (Integer index : m1.get(ch)) {
                     if (m2.get(ch).contains(index)) {
                         bulls.add(ch);
+                        m2.get(ch).remove(index);
+                        if(!m2.get(ch).contains(index)) {
+                            cows.remove(ch);
+                        }
                     }
-                    if (!bulls.contains(ch)) {
-                        cows.add(index);
+                    else if (!bulls.contains(ch)) {
+                        cows.add(ch);
                     }
                 }
             }
