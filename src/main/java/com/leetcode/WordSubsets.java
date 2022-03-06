@@ -37,67 +37,37 @@ public class WordSubsets {
     public List<String> wordSubsets(String[] words1, String[] words2) {
 
         // Create Map
-        HashMap<String, HashMap<Character, Integer>> mapWords1 = new HashMap<>();
-        for (String word : words1) {
-            mapWords1.put(word, createMap(word));
-        }
-
-        // Create Map
-        HashMap<String, HashMap<Character, Integer>> mapWords2 = new HashMap<>();
+        HashMap<Character, Integer> mapWords2 = new HashMap<>();
         for (String word : words2) {
-            mapWords2.put(word, createMap(word));
-        }
-
-        String w2 = String.join("", Arrays.asList(words2));
-        HashMap<Character, Integer> multiplicity = createMap(w2);
-
-        // Now Check m2 in m1
-        HashSet<String> set = new HashSet<>();
-        for (Map.Entry<String, HashMap<Character, Integer>> entry : mapWords2.entrySet()) {
-            HashMap<Character, Integer> m1Value = entry.getValue();
-            set.addAll(getMatches(mapWords1, m1Value, multiplicity));
-        }
-
-        return new ArrayList<>(set);
-
-    }
-
-    public HashSet<String> getMatches(HashMap<String, HashMap<Character, Integer>> m1, Map<Character, Integer> m2,
-            final HashMap<Character, Integer> multiplicity) {
-        HashSet<String> set = new HashSet<>();
-        for (String key : m1.keySet()) {
-            Map<Character, Integer> m1Val = m1.get(key);
-
-            if (m1Val.size() < m2.size()) {
-                continue;
+            HashMap<Character, Integer> curr = new HashMap<>();
+            for (Character ch : word.toCharArray()) {
+                curr.put(ch, curr.getOrDefault(ch, 0) + 1);
+                mapWords2.put(ch, Math.max(mapWords2.getOrDefault(ch, 0), curr.get(ch)));
             }
+        }
 
-            boolean found = true;
-            for (Character m2Char : m2.keySet()) {
-                if (m1Val.containsKey(m2Char)) {
-                    if (m1Val.get(m2Char) >= m2.get(m2Char) &&
-                            checkMulti(key, multiplicity.keySet()) /*&&
-                            m1Val.get(m2Char) >= multiplicity.get(m2Char)*/) {
-                        found &= true;
-                    } else {
-                        found &= false;
-                    }
+        List<String> result = new ArrayList<>();
+        HashMap<Character, Integer> mapWords1 = new HashMap<>();
+        for (String word : words1) {
+
+            mapWords1 = createMap(word);
+
+            boolean isUniversal = true;
+
+            for (Character ch : mapWords2.keySet()) {
+                if (!mapWords1.containsKey(ch) || mapWords1.get(ch) < mapWords2.get(ch)) {
+                    isUniversal = false;
+                    break;
                 }
             }
-            if (found && m1Val.keySet().containsAll(m2.keySet()) && m1Val.keySet().containsAll(multiplicity.keySet())) {
-                set.add(key);
-            }
-        }
-        return set;
-    }
 
-    private boolean checkMulti(final String key, final Set<Character> multiplicity) {
-        for(Character ch : multiplicity) {
-            if(key.indexOf(ch) == -1) {
-                return false;
+            if (isUniversal) {
+                result.add(word);
             }
         }
-        return true;
+
+        return result;
+
     }
 
     public HashMap<Character, Integer> createMap(String input) {
