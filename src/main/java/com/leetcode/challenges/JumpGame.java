@@ -1,4 +1,4 @@
-package com.leetcode;
+package com.leetcode.challenges;
 
 /**
  * https://leetcode.com/problems/jump-game/
