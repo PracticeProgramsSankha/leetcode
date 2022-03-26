@@ -1,0 +1,8 @@
+#Leetcode Curated
+https://leetcode.com/list/xoqag3yj/
+
+#Trie Problem
+leetcode 208
+
+#LeetCode 75 (Trie)
+https://leetcode.com/problems/design-add-and-search-words-data-structure/
