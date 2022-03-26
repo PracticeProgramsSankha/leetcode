@@ -17,9 +17,6 @@ f
 6src/main/java/com/leetcode/challenges/ReorderList.java,1\a\1a161493d25f2decef244e01fa7e4ec5fddd41da
 h
 8src/main/java/com/leetcode/challenges/AnagramGroups.java,d\6\d6b9bbba2989091941efa2d4785ddc5b5e05cd8b
-:
-
-Klarna.iml,4\5\45d7504ab4275a253bc81b173835c84a85456e5e
 <
 leetcode.iml,1\2\12e6f90224ad9190b776ceffc4cfc992904bfa64
 l
@@ -36,8 +33,6 @@ a
 1src/main/java/com/leetcode/challenges/TwoSum.java,7\8\784977df655e955f008d31926b5f974e223f5c46
 d
 4src/main/java/com/leetcode/challenges/KSumPairs.java,8\b\8b231dfd0f0362d7d400ccce9902e81c473aed5d
-e
-5src/main/java/com/leetcode/challenges/RandomPick.java,5\b\5b2699ca277b5ab43e4106ff5536d5df94c841d4
 j
 :src/main/java/com/leetcode/challenges/MultiplyStrings.java,2\7\27fff3692310c4e224bebea1e57b4dfec6d33c91
 i
