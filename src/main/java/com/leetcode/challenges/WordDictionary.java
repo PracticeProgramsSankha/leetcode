@@ -42,7 +42,6 @@ class WordDictionary {
 
     public WordDictionary() {
         rootNode = new TrieNode();
-
     }
 
     public void addWord(String word) {
