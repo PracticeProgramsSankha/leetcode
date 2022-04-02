@@ -6,6 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 import java.util.Set;
+import java.util.TreeSet;
 import org.apache.commons.lang3.StringUtils;
 
 
@@ -98,6 +99,8 @@ public class WordBreak {
 
         //not found, back track or possibly exit
         return false;
+
+
 
     }
 

@@ -36,7 +36,6 @@ public class Solution2 {
     HashSet<Integer> lookingLeft = new HashSet<>(); // Row
     HashSet<Integer> lookingRight = new HashSet<>(); // Row
     HashSet<int[]> obstacles = new HashSet<>(); // both
-    HashSet<int[]> visited = new HashSet<>(); // both
 
     public boolean solution(String[] B) {
         // write your code in Java SE 8
@@ -91,18 +90,14 @@ public class Solution2 {
             // Reached
             return true;
         }
-/*        if (!canMove(mat, assassin_pos)) {
-            return false;
-        }*/
-        if (visited.contains(assassin_pos)) {
-            return false;
-        }
+
+        char temp = mat[ass_x][ass_y];
+        mat[ass_x][ass_y] = ' ';
         boolean leftMove = false;
         boolean rightMove = false;
         boolean upMove = false;
         boolean downMove = false;
 
-        visited.add(assassin_pos);
         if (canMove(mat, assassin_pos, 0, -1)) { // Left
             leftMove = backTrack(mat, new int[] { assassin_pos[0], assassin_pos[1] - 1 });
         }
@@ -115,7 +110,7 @@ public class Solution2 {
         if (canMove(mat, assassin_pos, 1, 0)) { // Down
             downMove = backTrack(mat, new int[] { assassin_pos[0] + 1, assassin_pos[1] });
         }
-        visited.remove(assassin_pos);
+        mat[ass_x][ass_y] = temp;
 
         return leftMove || rightMove || upMove || downMove;
     }
@@ -127,7 +122,10 @@ public class Solution2 {
         if (new_x < 0 || new_x >= mat.length || new_y < 0 || new_y >= mat[0].length) {
             return false;
         }
-        if (mat[pos[0]][pos[1]] != EMPTY && visited.contains(pos)) {
+        if (mat[pos[0]][pos[1]] != EMPTY) {
+            return false;
+        }
+        if(mat[x][y] == ' ') {
             return false;
         }
         int curr_x = pos[0]; // row
