@@ -3,6 +3,13 @@ https://leetcode.com/list/xoqag3yj/
 
 #Trie Problem
 leetcode 208
+Problems Solved with Trie
+https://leetcode.com/problems/implement-trie-prefix-tree/solution/
+1. Autocomplete
+2. Spell Checker
+3. IP Routing
+4. T9 predictive text
+5. Solving Word games
 
 #LeetCode 75 (Trie)
 https://leetcode.com/problems/design-add-and-search-words-data-structure/
