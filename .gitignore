@@ -3,3 +3,5 @@
 /target/*
 .idea/*
 target/*
+.idea/sonarlint/*
+*.pb

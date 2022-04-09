@@ -1,14 +1,0 @@
-
-L
-java:S1481E"*Remove this unused "stack" local variable.(ÑÖÙƒıÿÿÿÿ8œâŒÔÏ/
-G
-java:S2116@"%Use "Arrays.toString(array)" instead.(¸Ìá÷ÿÿÿÿÿ8ıá ÔÏ/
-]
-java:S1854<"ARemove this useless assignment to local variable "resultBuilder".(µ§Ïh8ıá ÔÏ/
-r
-java:S1149E"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒıÿÿÿÿ8œâŒÔÏ/
-T	java:S106"9Replace this use of System.out or System.err by a logger.(–Å“|8ì³—ĞÏ/
-[
-java:S1854E"9Remove this useless assignment to local variable "stack".(ÑÖÙƒıÿÿÿÿ8œâŒÔÏ/
-N
-java:S1481<"2Remove this unused "resultBuilder" local variable.(µ§Ïh8ıá ÔÏ/
