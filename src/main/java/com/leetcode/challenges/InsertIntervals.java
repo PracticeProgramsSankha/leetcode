@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * https://leetcode.com/problems/insert-interval/
+ */
 public class InsertIntervals {
 
     public static void main(String[] args) {
@@ -26,25 +29,25 @@ public class InsertIntervals {
 
         List<int[]> result = new ArrayList<>();
 
-        int indx = 0;
+        int index = 0;
         // 1. Check if newInterval start is greater and exisitng intervals, add them
-        while (indx < intervals.length && intervals[indx][1] < newInterval[0]) {
-            result.add(intervals[indx++]);
+        while (index < intervals.length && intervals[index][1] < newInterval[0]) {
+            result.add(intervals[index++]);
         }
         // 2. At this point intervals will be overlapping, means existing interval start is less than newIntervalEnd
-        while (indx < intervals.length && intervals[indx][0] <= newInterval[1]) {
+        while (index < intervals.length && intervals[index][0] <= newInterval[1]) {
             // Absorb new interval
-            newInterval[0] = Math.min(newInterval[0], intervals[indx][0]);
-            newInterval[1] = Math.max(newInterval[1], intervals[indx][1]);
-            indx++;
+            newInterval[0] = Math.min(newInterval[0], intervals[index][0]);
+            newInterval[1] = Math.max(newInterval[1], intervals[index][1]);
+            index++;
         }
         // 3. Add the new interval
         result.add(newInterval);
 
         // 4. Add Remaining interval
-        while (indx < intervals.length) {
-            result.add(intervals[indx]);
-            indx++;
+        while (index < intervals.length) {
+            result.add(intervals[index]);
+            index++;
         }
 
         return result.toArray(new int[result.size()][2]);
