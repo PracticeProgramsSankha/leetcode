@@ -1,4 +1,4 @@
-package com.leetcode.challenges;
+package com.datastructure.Zolando;
 
 import java.util.*;
 
@@ -72,7 +72,6 @@ public class MeetingRoom {
                 currentOccupancy--;
             }
             maxOccupancy = Math.max(maxOccupancy, currentOccupancy);
-
         }
 
         return currentOccupancy;
