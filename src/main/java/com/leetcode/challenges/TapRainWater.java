@@ -1,4 +1,4 @@
-package com.leetcode;
+package com.leetcode.challenges;
 
 import org.junit.Assert;
 
