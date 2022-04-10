@@ -13,3 +13,19 @@ https://leetcode.com/problems/implement-trie-prefix-tree/solution/
 
 #LeetCode 75 (Trie)
 https://leetcode.com/problems/design-add-and-search-words-data-structure/
+
+Tutorials
+https://medium.com/@XiaohanZeng/i-interviewed-at-five-top-companies-in-silicon-valley-in-five-days-and-luckily-got-five-job-offers-25178cf74e0f
+    Here are some resources that I found really helpful:
+    http://blog.gainlo.co
+    http://horicky.blogspot.com
+    https://www.hiredintech.com/classrooms/system-design/lesson/52
+    http://www.lecloud.net/tagged/scalability
+    http://tutorials.jenkov.com/software-architecture/index.html
+    http://highscalability.com/
+
+FB Prep:
+https://www.facebookrecruiting.com/portal/interview_prep_hub?c=3001266390183960
+
+FB 40 problems
+https://www.educative.io/blog/cracking-top-facebook-coding-interview-questions
