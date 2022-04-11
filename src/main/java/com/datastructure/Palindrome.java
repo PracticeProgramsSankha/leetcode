@@ -1,6 +1,7 @@
 package com.datastructure;
 
 import java.util.HashMap;
+import org.junit.Assert;
 
 
 /**
@@ -17,7 +18,7 @@ public class Palindrome {
         return collector == num;
     }
 
-    public static boolean isPalindromeString(String str) {
+    public static boolean isPalindromeString1(String str) {
         int length = str.length();
         int mid = length / 2;
         int counter = 0;
@@ -34,6 +35,19 @@ public class Palindrome {
         return false;
     }
 
+    public static boolean isPalindromeString(String str) {
+        int right = str.length() - 1;
+        int left = 0;
+        while (left <= right) {
+            if (str.charAt(left) != str.charAt(right)) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
+    }
+
     public static void main(String[] args) {
         testPalindromeNumber(101);
         testPalindromeNumber(1221);
@@ -42,11 +56,15 @@ public class Palindrome {
         testPalindromeNumber(22321);
         testPalindromeNumber(22322);
 
-        testPalindromeString("aa");
-        testPalindromeString("aba");
-        testPalindromeString("abc");
-        testPalindromeString("aabbaa");
-        testPalindromeString("acbca");
+        test("aa");
+        test("aba");
+        test("abc");
+        test("aabbaa");
+        test("acbca");
+    }
+
+    public static void test(String str) {
+        Assert.assertEquals(str, isPalindromeString(str), isPalindromeString1(str));
     }
 
     public static void testPalindromeNumber(Integer number) {
