@@ -8,15 +8,14 @@ public class LongestPalindrome {
 
     public static void main(String[] args) {
         LongestPalindrome sol = new LongestPalindrome();
-        System.out.println(sol.longestPalindrome("babad"));
-        System.out.println(sol.longestPalindrome("cbbd"));
+        System.out.println(sol.longestPalindrome("babad")); // bab
+        System.out.println(sol.longestPalindrome("cbbd")); // bb
     }
 
     private String longestPalindrome(final String inputString) {
         if( inputString == null || inputString.isEmpty())
             return inputString;
         int max = 0;
-        int pos = -1;
         String result = "";
         for( int i = 0; i < inputString.length(); i++) {
             int odd = getLength(inputString, i, i);
