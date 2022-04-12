@@ -20,7 +20,7 @@ import java.util.Stack;
  * <p>
  * ----------------
  */
-public class Solution1 {
+public class ChangeDirectory {
     public static void main(String[] args) {
 
         test1();
@@ -33,40 +33,40 @@ public class Solution1 {
     }
 
     private static void test6() {
-        Solution1 sol = new Solution1("/x/y");
+        ChangeDirectory sol = new ChangeDirectory("/x/y");
         sol.changeDirectory("cd /p/./q");
     }
 
     private static void test5() {
-        Solution1 sol = new Solution1("/x/y");
+        ChangeDirectory sol = new ChangeDirectory("/x/y");
         sol.changeDirectory("cd ../p/../q");
     }
 
     private static void test4() {
-        Solution1 sol = new Solution1("/foo");
+        ChangeDirectory sol = new ChangeDirectory("/foo");
         sol.changeDirectory("cd .");
     }
 
     private static void test3() {
-        Solution1 sol = new Solution1("/foo");
+        ChangeDirectory sol = new ChangeDirectory("/foo");
         sol.changeDirectory("cd ..");
     }
 
     private static void test2() {
-        Solution1 sol = new Solution1("/foo");
+        ChangeDirectory sol = new ChangeDirectory("/foo");
         sol.changeDirectory("cd /bar");
     }
 
     private static void test1() {
-        Solution1 sol = new Solution1("/foo");
+        ChangeDirectory sol = new ChangeDirectory("/foo");
         sol.changeDirectory("cd bar");
     }
 
-    Solution1(String cmd) {
+    ChangeDirectory(String cmd) {
         changeDirectoryInternal(cmd);
     }
 
-    Solution1() {
+    ChangeDirectory() {
         stack.clear();
     }
 
