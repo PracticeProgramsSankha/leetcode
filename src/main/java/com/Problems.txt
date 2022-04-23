@@ -1,6 +1,7 @@
 #Blind Curated 75
 https://leetcode.com/list/xoqag3yj/
 Ans: https://docs.google.com/spreadsheets/d/1A2PaQKcdwO_lwxz9bAnxXnIQayCouZP6d-ENrBz_NXc/edit#gid=0
+https://neetcode.io/
 
 =====
 💡 CODING SOLUTIONS: https://www.youtube.com/playlist?list=PLot-Xpze53leF0FeHz2X0aG3zd0mr1AW_
@@ -39,3 +40,104 @@ https://www.facebookrecruiting.com/portal/interview_prep_hub?c=3001266390183960
 
 FB 40 problems
 https://www.educative.io/blog/cracking-top-facebook-coding-interview-questions
+
+FB Careers:
+https://www.metacareers.com/swe-prep-techscreen/
+Technical Screening Guide: https://scontent.fbom26-1.fna.fbcdn.net/v/t39.2365-6/75102466_573561830053024_996141617616257024_n.pdf?_nc_cat=105&ccb=1-5&_nc_sid=ad8a9d&_nc_ohc=lWfo5vMkVWEAX-_74Ra&_nc_ht=scontent.fbom26-1.fna&oh=00_AT8jiQfyEu9V1YgEubMNuWvmGszD5cnGZUBy36LZJzCqwg&oe=6258D898
+https://medium.com/@XiaohanZeng/i-interviewed-at-five-top-companies-in-silicon-valley-in-five-days-and-luckily-got-five-job-offers-25178cf74e0f
+
+System Design:
+==============
+Here are some resources that I found really helpful:
+http://blog.gainlo.co
+http://horicky.blogspot.com
+https://www.hiredintech.com/classrooms/system-design/lesson/52
+http://www.lecloud.net/tagged/scalability
+http://tutorials.jenkov.com/software-architecture/index.html
+http://highscalability.com/
+
+LinkedIn
+============
+Dynamic Programming Patterns !!
+
+Some standard Dynamic Programming questions with different levels are given here. Do check below DP problems pattern-wise.
+
+Longest Increasing Subsequence variants:
+----------------------------------------
+https://lnkd.in/gBM_sp78
+https://lnkd.in/gX9Ahcq8
+https://lnkd.in/gyqp7p-7
+https://lnkd.in/gVncs-mU
+https://lnkd.in/g8PsjvUc
+https://lnkd.in/gPZjWxga
+https://lnkd.in/gFz-UzBy
+
+Partition Subset:
+-----------------
+https://lnkd.in/gHKJxMbN
+https://lnkd.in/gCYVAtdC
+
+BitMasking:
+-----------
+https://lnkd.in/gNbrBE45
+
+Longest Common Subsequence Variant:
+-----------------------------------
+https://lnkd.in/g-gK5cUm
+https://lnkd.in/g8y-MF9K
+https://lnkd.in/gcKcgDsy
+https://lnkd.in/gTYPP8XX
+
+Palindrome:
+-----------
+https://lnkd.in/gp62UKtj
+https://lnkd.in/g9eSKc7P
+
+Coin Change variant:
+--------------------
+https://lnkd.in/gVwSnnmW
+https://lnkd.in/gzsCcaxM
+https://lnkd.in/gbE2Ztrc
+https://lnkd.in/gnxGkJnw
+https://lnkd.in/g89B4Sx5
+
+Matrix multiplication variant:
+------------------------------
+https://lnkd.in/gfx6bgy9
+https://lnkd.in/gSaPNNhQ
+https://lnkd.in/gknKY6gC
+
+Matrix/2D Array:
+----------------
+https://lnkd.in/gyZgY4HP
+https://lnkd.in/gArgdbpu
+https://lnkd.in/gJ9U4WuJ
+https://lnkd.in/gkC8YzM5
+https://lnkd.in/giyNEE7p
+https://lnkd.in/gyur-_Bj
+
+Hash + DP:
+---------
+https://lnkd.in/gWNd8faP
+https://lnkd.in/g3cZT64X
+https://lnkd.in/gCDX8kps
+https://lnkd.in/gctjnk6H
+
+State machine:
+--------------
+https://lnkd.in/gTF3-c3E - Done
+https://lnkd.in/gyhSA6Qt - Done
+https://lnkd.in/g2ji_pEX
+https://lnkd.in/ggT5fBNr
+https://lnkd.in/g5avbqJH
+https://lnkd.in/gNpyHDXk
+
+Depth First Search + DP:
+------------------------
+https://lnkd.in/gmazHDpy
+https://lnkd.in/gnXBfmYU
+
+Minimax DP:
+-----------
+https://lnkd.in/gzUPPYgX
+https://lnkd.in/gqFKRvSe
