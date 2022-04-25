@@ -8,6 +8,7 @@ import java.util.Queue;
 import java.util.Set;
 import java.util.TreeSet;
 import org.apache.commons.lang3.StringUtils;
+import org.junit.Assert;
 
 
 /**
@@ -18,10 +19,15 @@ public class WordBreak {
 
     public static void main(String[] args) {
         WordBreak sol = new WordBreak();
-        System.out.println(sol.wordBreak("bb", Arrays.asList("a", "b", "bbb", "bbbb")));  // true
-        System.out.println(sol.wordBreak("leetcode", Arrays.asList("leet", "code"))); //true
-        System.out.println(sol.wordBreak("applepenapple", Arrays.asList("apple", "pen"))); //true
-        System.out.println(sol.wordBreak("catsandog", Arrays.asList("cats", "dog", "sand", "and", "cat"))); //false
+        Assert.assertEquals("TEST1", true, sol.wordBreak("applepie", Arrays.asList("apple", "apple", "pear", "pie")));
+        Assert.assertEquals("TEST2", false, sol.wordBreak("applepeer", Arrays.asList("apple", "apple", "pear", "pie")));
+        Assert.assertEquals("TEST3", true,sol.wordBreak("bb", Arrays.asList("a", "b", "bbb", "bbbb")));  // true
+        Assert.assertEquals("TEST4", true,sol.wordBreak("leetcode", Arrays.asList("leet", "code"))); //true
+        Assert.assertEquals("TEST5", true,sol.wordBreak("applepenapple", Arrays.asList("apple", "pen"))); //true
+        Assert.assertEquals("TEST6", false,
+                sol.wordBreak("catsandog", Arrays.asList("cats", "dog", "sand", "and", "cat"))); //false
+
+        System.out.println("all test passed");
     }
 
     class TrieNode {
@@ -69,7 +75,6 @@ public class WordBreak {
         visited = new boolean[inputStr.length()];
 
         return traverse(inputStr, 0);
-
     }
 
     private boolean traverse(final String inputStr, int idx) {
@@ -85,10 +90,12 @@ public class WordBreak {
         }
         visited[idx] = true;
 
-        //traversea
+        //traverse
         while (idx < inputStr.length() && curr.isChildren(inputStr.charAt(idx))) {
             curr = curr.children[inputStr.charAt(idx) - 'a'];
             if (curr.isEnd) {
+                // As soon as we reach to leaf node, iterate over the trie until the input string comes to end
+                // e,g apple with be at end, the pie will start from beg.
                 boolean answer = traverse(inputStr, idx + 1);
                 if (answer) {
                     return true;
@@ -99,9 +106,6 @@ public class WordBreak {
 
         //not found, back track or possibly exit
         return false;
-
-
-
     }
 
     private TrieNode getTrieNode(final List<String> wordDict) {
