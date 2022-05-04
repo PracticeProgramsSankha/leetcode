@@ -7,7 +7,7 @@ import org.junit.Test;
 /**
  * @author sanray on 9/22/2021
  */
-public class SolutionTest {
+public class Solution3Test {
 
     @Test
     public void test1() {

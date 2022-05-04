@@ -18,13 +18,13 @@ public class Utility {
     }
 
     public static void print2DArray(final String msg, final int[][] arr) {
-        System.out.print(msg + " -> ");
+        System.out.print(msg + " -> \n");
         for (int i = 0; i < arr.length; i++) {
             System.out.print("[");
             for (int j = 0; j < arr[0].length; j++) {
                 System.out.print(arr[i][j] + ",");
             }
-            System.out.print("] ");
+            System.out.print("]\n");
         }
         System.out.println();
     }
