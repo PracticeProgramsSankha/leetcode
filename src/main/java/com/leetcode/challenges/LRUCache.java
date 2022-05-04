@@ -7,6 +7,10 @@ import java.util.Hashtable;
  * https://leetcode.com/problems/lru-cache/
  *
  * @author sanray on 3/10/2022
+ *
+ * Maintain a doubly linked list and hashmap
+ * Every new read or write is done at head of list,
+ * removal - check hashmap first and if exists get node from map and remvoe from list
  */
 public class LRUCache {
 
